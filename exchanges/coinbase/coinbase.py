@@ -1,7 +1,7 @@
 import requests
 import json
 
-class API:
+class coinbaseAPI:
 
     # Constructor
     # Expects 'base' as cryptocurrency abbreviation - Coinbase API currently allows only 'BTC', 'ETH', 'LTC', 'BCH'

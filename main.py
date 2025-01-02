@@ -1,11 +1,11 @@
 import json
-from coinbase import API
+from exchanges.coinbase.coinbase import coinbaseAPI
 
 with open('config.json') as config_file:
     config = json.load(config_file)
 base = config['base']
 currency = config['currency']
-API = API(base, currency)
+coinbaseAPI = coinbaseAPI(base, currency)
 
-test = API.getCurrentPrice()
+test = coinbaseAPI.getCurrentPrice()
 print(test)
