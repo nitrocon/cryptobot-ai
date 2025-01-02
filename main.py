@@ -1,5 +1,5 @@
 import json
-from API import API
+from coinbase import API
 
 with open('config.json') as config_file:
     config = json.load(config_file)

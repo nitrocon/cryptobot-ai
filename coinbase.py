@@ -23,7 +23,7 @@ class API:
         r = requests.post(url, data)
         return json.loads(r.text)
 
-    # Fetch current price of coin from Coinbase API
+    # Fetch current price of coin from coinex API
     def getCurrentPrice(self):
         return self.get(self.baseUrl + 'prices/' + self.base + '-' + self.currency + '/spot/')
 
@@ -31,4 +31,3 @@ class API:
     # Expects date to be 
     def getHistoricPrice(self, date):
         return 0
-
